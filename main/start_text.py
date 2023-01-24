@@ -7,7 +7,7 @@ from config import ADMIN
 async def start_cmd(bot, msg):
     txt="This is personal use bot 🙏. Do you want your own bot? 👇 Click the source code to deploy"
     btn = InlineKeyboardMarkup([[
-        InlineKeyboardButton("🤖 SOURCE CODE", url="https://github.com/MrMKN/Simple-Rename-Bot")
+        InlineKeyboardButton("🤖 SOURCE CODE", url="https://github.com/HTP/Simple-Rename-Bot")
         ],[
         InlineKeyboardButton("🖥️ How To Deploy", url="https://youtu.be/oc847WvOUaI")
     ]])
@@ -19,7 +19,7 @@ async def start_cmd(bot, msg):
 
 @Client.on_callback_query(filters.regex("start"))
 async def start(bot, msg, cb=True):   
-    txt=f"hai {msg.from_user.mention} i am simple rename bot with personal usage.\nthis bot is made by <b><a href=https://github.com/MrMKN>MrMKN</a></b>"                                     
+    txt=f"hai {msg.from_user.mention} i am simple rename bot with personal usage.\nthis bot is made by <b><a href=https://github.com/HTP>HTP</a></b>"                                     
     button= [[
         InlineKeyboardButton("🤖 Bot Updates", url="https://t.me/htp_movies666")
         ],[
@@ -47,7 +47,7 @@ async def about(bot, msg):
     me=await bot.get_me()
     Master=f"<a href=https://t.me/htp_movies666>MoTech</a> & <a href=https://t.me/htp_movies666>MhdRzn</a>"  
     Source="<a href=https://t.me/htp_movies666>Click Here</a>"
-    txt=f"<b>Bot Name: {me.mention}\nDeveloper: <a href=https://t.me/htp_movies666>MrMKN</a>\nBot Updates: <a href=https://t.me/htp_movies666>Mᴋɴ Bᴏᴛᴢ™</a>\nMy Master's: {Master}\nSource Code: {Source}</b>"                 
+    txt=f"<b>Bot Name: {me.mention}\nDeveloper: <a href=https://t.me/htp_movies666>HTP</a>\nBot Updates: <a href=https://t.me/htp_movies666>Mᴋɴ Bᴏᴛᴢ™</a>\nMy Master's: {Master}\nSource Code: {Source}</b>"                 
     button= [[        
         InlineKeyboardButton("🚫 Close", callback_data="del"),
         InlineKeyboardButton("⬅️ Back", callback_data="start") 
